@@ -1,0 +1,17 @@
+<resources>
+
+    <color name="APP_primary">#023d90</color>
+    <color name="APP_primary_dark">#013266</color>
+    <color name="APP_text_primary">#FFFFFF</color>
+    <color name="APP_text_header">#222</color>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/APP_primary</item>
+        <item name="colorPrimaryDark">@color/APP_primary_dark</item>
+        <item name="colorAccent">@color/APP_text_primary</item>
+        <item name="android:navigationBarColor">@color/APP_primary</item>
+    </style>
+
+
+</resources>

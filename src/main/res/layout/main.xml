@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-              android:id="@+id/mainLayout">
-<TextView
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Hello World, Scala!"
-    />
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New CheckBox"
-            android:id="@+id/checkBox"/>
-</LinearLayout>
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
 
+<!-- The main content view -->
+<FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+
+    <ListView
+            android:id="@+id/main_feed_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:clickable="true"
+            android:background="#88b1ff"
+            android:dividerHeight="0dp">
+    </ListView>
+</FrameLayout>
+
+<!-- The navigation drawer -->
+<ListView android:id="@+id/left_drawer"
+          android:layout_width="300dp"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:choiceMode="singleChoice"
+          android:divider="@android:color/transparent"
+          android:dividerHeight="0dp"
+          android:background="#202020"/>
+
+</android.support.v4.widget.DrawerLayout>

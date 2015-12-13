@@ -171,7 +171,7 @@
 -keep class android.test.InstrumentationTestRunner { <init>(...); }
 
 # view AndroidManifest.xml #generated:7
--keep class com.eyewyre.TestActivity { <init>(...); }
+-keep class com.eyewyre.MainActivity { <init>(...); }
 
 -ignorewarnings
 -keep class scala.Dynamic
