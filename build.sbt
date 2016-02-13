@@ -8,11 +8,11 @@ libraryDependencies ++= Seq(
   "joda-time" % "joda-time" % "2.4"
 )
 
-//platformTarget in Android := "android-17"
+platformTarget in Android := "android-21"
 
-//minSdkVersion in Android := "8"
+minSdkVersion in Android := "21"
 
-//targetSdkVersion in Android := "19"
+targetSdkVersion in Android := "21"
 
 useProguardInDebug in Android := false
 
