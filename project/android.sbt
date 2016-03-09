@@ -2,4 +2,4 @@ resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositor
 
 addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.7.0-SNAPSHOT")
 
-addSbtPlugin("com.hanhuy.sbt" % "android-sdk-plugin" % "1.5.16")
+addSbtPlugin("com.hanhuy.sbt" % "android-sdk-plugin" % "1.5.19")
